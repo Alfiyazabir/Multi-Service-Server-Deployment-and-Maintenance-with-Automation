@@ -73,7 +73,6 @@ BACKUP_DIR="/path/to/backup/directory"
 
 3. Schedule Automated Backups
 - The setup script configures cron jobs automatically, but you can modify them:
-
 - Edit the cron job:
 ```bash
 crontab -e
@@ -83,8 +82,8 @@ crontab -e
 0 2 * * * /path/to/backup_script.sh
 ```
 4. Verify Deployment
-- Access the hosted website at http://<server-ip>.
+Access the hosted website at http://<server-ip>.
 - Check backup archives at the specified directory.
 
 Contributing
-Feel free to fork this repository, open issues, or submit pull requests. Contributions are always welcome!
+- Feel free to fork this repository, open issues, or submit pull requests. Contributions are always welcome!

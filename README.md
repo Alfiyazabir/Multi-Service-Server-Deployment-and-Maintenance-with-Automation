@@ -53,36 +53,38 @@ This project sets up a Linux server environment that includes:
    ```bash
    git clone https://github.com/Alfiyazabir/Multi-Service-Server-Deployment-and-Maintenance-with-Automation.git
    cd multi-service-deployment-automation
+   
 Run the setup script:
 
-bash
-Copy code
+```bash
 sudo ./setup.sh
+```
 This will:
-
 Install Nginx, Apache2, and MySQL.
 Set up initial user roles.
 Configure the backup scripts.
 Configure the config.env file with database credentials and backup paths:
 
-bash
-Copy code
+```bash
 DB_USER="your_db_user"
 DB_PASSWORD="your_db_password"
 BACKUP_DIR="/path/to/backup/directory"
+```
+
 3. Schedule Automated Backups
 The setup script configures cron jobs automatically, but you can modify them:
 
 Edit the cron job:
-bash
-Copy code
+```bash
 crontab -e
+```
 Example schedule (daily at 2 AM):
 cron
-Copy code
-0 2 * * * /path/to/backup_script.sh
+```0 2 * * * /path/to/backup_script.sh```
+
 4. Verify Deployment
 Access the hosted website at http://<server-ip>.
 Check backup archives at the specified directory.
+
 Contributing
 Feel free to fork this repository, open issues, or submit pull requests. Contributions are always welcome!
